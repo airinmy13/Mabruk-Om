@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mas Izza! 🎉</title>
+    <meta name="description" content="Selamat Ulang Tahun Mas Izza - Kejutan Spesial Untukmu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Welcome screen -->
+        <div class="welcome-screen" id="welcomeScreen">
+            <div class="welcome-content">
+                <h1 class="glitch" data-text="Ada Kejutan Nih!">Ada Kejutan Nih!</h1>
+                <p class="subtitle">Khusus untuk seseorang yang spesial...</p>
+                <button class="btn-start" id="btnStart">
+                    <span>Buka Kejutannya! 🎁</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content hidden" id="mainContent">
+            <!-- Hero section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="main-title">
+                        <span class="line">Happy Birthday</span>
+                        <span class="line highlight">Mas Izza! 🎂</span>
+                    </h1>
+                    <p class="hero-subtitle">Mabruk Alfa Mabruk! 🎉</p>
+                    <p class="hero-age">Selamat ulang tahun yang ke-21! 🎊✨</p>
+                </div>
+                <div class="floating-elements">
+                    <div class="float-item">🎈</div>
+                    <div class="float-item">🎁</div>
+                    <div class="float-item">⭐</div>
+                    <div class="float-item">🎊</div>
+                    <div class="float-item">🌟</div>
+                </div>
+            </section>
+
+            <!-- Photo section -->
+            <section class="photo-section">
+                <div class="photo-container">
+                    <div class="photo-frame">
+                        <img src="mas-izza.jpg" alt="Mas Izza" class="birthday-photo">
+                        <div class="photo-overlay">
+                            <p class="photo-caption">🎂 The Birthday Star 🌟</p>
+                        </div>
+                    </div>
+                    <p class="photo-subtitle">Semoga selalu dalam lindungan Allah 💙</p>
+                </div>
+            </section>
+
+            <!-- Music Player Section -->
+            <section class="music-section">
+                <div class="card music-card">
+                    <h2>🎵 Lagu Spesial Buat Mas Izza</h2>
+                    <p class="music-subtitle">"Everything You Are"</p>
+                    <div class="music-player-box">
+                        <div class="music-thumbnail">
+                            <div class="play-icon" id="playIconDisplay">▶️</div>
+                        </div>
+                        <button class="btn-play-music" id="btnPlayMusic">
+                            <span id="playButtonText">🎵 Putar Lagu</span>
+                        </button>
+                        <p class="music-instruction">Taruh file MP4 dengan nama: <code>lagu.mp4</code></p>
+                    </div>
+                    <p class="music-note">💙 Layaknya lagu ini, "Everything You Are" 🎶✨</p>
+
+                    <!-- Hidden audio element with loop -->
+                    <audio id="bgAudio" loop>
+                        <source src="lagu.mp4" type="audio/mp4">
+                        <source src="lagu.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </section>
+
+            <!-- Confetti Section -->
+            <section class="interactive">
+                <div class="card interactive-card">
+                    <h2>🎊 Perayaan!</h2>
+                    <p>Klik tombol di bawah untuk pesta confetti!</p>
+                    <button class="btn-confetti" id="btnConfetti">
+                        <span>Ledakkan Confetti! 🎉</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Message cards -->
+            <section class="messages">
+                <div class="card message-card">
+                    <div class="card-icon">📖</div>
+                    <h2>Untuk Hafalan Al-Qur'an</h2>
+                    <p>Semoga hafalan Al-Qur'annya lancar, diberi kemudahan untuk khatam, dan menjadi hafalan yang penuh
+                        barokah. Semoga Al-Qur'an menjadi syafaat untukmu di dunia dan akhirat. Aamiin! 🤲</p>
+                </div>
+
+                <div class="card message-card">
+                    <div class="card-icon">🎓</div>
+                    <h2>Untuk Kuliah & Karir</h2>
+                    <p>Semoga kuliahnya dilancarkan, ilmunya bermanfaat, dan diberi kemudahan dalam setiap langkah.
+                        Semoga rezeki selalu mengalir dengan cara yang halal dan penuh barokah. Sukses selalu, Mas! 💪
+                    </p>
+                </div>
+
+                <div class="card message-card">
+                    <div class="card-icon">💝</div>
+                    <h2>Untuk Masa Depan</h2>
+                    <p>Semoga segera dipertemukan dengan istri yang sholihah, yang bisa jadi teman hidup terbaik dan
+                        penyejuk hati. Semoga Allah berikan yang terbaik untukmu! 😄</p>
+                </div>
+
+                <div class="card message-card special-card">
+                    <div class="card-icon">🤝</div>
+                    <h2>Selalu Ada Untukmu</h2>
+                    <p class="special-message">
+                        Kalau ada apa-apa, cerita ya Mas! Aku selalu ada kok.
+                        <br><br>
+                        <strong>Layaknya lagu ini...</strong>
+                        <br>
+                        <em>"Everything You Are"</em> 🎶💙
+                    </p>
+                </div>
+            </section>
+
+            <!-- Final message -->
+            <section class="final-message">
+                <div class="card final-card">
+                    <h2>Doa Terbaik Selalu Untukmu 🤲</h2>
+                    <p class="final-text">
+                        Semoga di usia yang baru ini, Mas Izza semakin dekat dengan Allah,
+                        semakin barokah hidupnya, dan selalu diberi kemudahan dalam segala urusan.
+                        <br><br>
+                        Barakallahu fiik, Mas!
+                        <br>
+                        Semoga panjang umur, sehat selalu, dan bahagia dunia akhirat! 🎂✨
+                    </p>
+                    <div class="signature">
+                        <p>Dengan penuh kasih sayang,</p>
+                        <p class="signature-name">Dari ponakanmu yang cantik dan imut 💙</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Confetti canvas -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
